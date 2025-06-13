@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Glow | Skincare Rituals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <h1>Bloom & Glow</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#routines">Routines</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Nurture Your <span class="highlight">Natural</span> Radiance</h2>
+                <p>Gentle, effective skincare rituals for your unique complexion</p>
+                <button class="cta-button pulse">Begin Your Ritual</button>
+            </div>
+            <div class="hero-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNTAwIDUwMCI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNmZmY2ZjAiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIyNTAiIHI9IjE1MCIgZmlsbD0iI2ZmZDZlMCIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjIwMCIgcj0iNTAiIGZpbGw9IiNmZmI3YzUiLz48Y2lyY2xlIGN4PSIzNTAiIGN5PSIyMDAiIHI9IjUwIiBmaWxsPSIjZmZiN2M1Ii8+PGNpcmNsZSBjeD0iMjUwIiBjeT0iMzAwIiByPSI3MCIgZmlsbD0iI2ZmYjVjMCIvPjxwYXRoIGQ9Ik0yMDAgMzAwIHEtMjAgLTQwIDAgLTgwIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0zMDAgMzAwIHEyMCAtNDAgMCAtODAiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PC9zdmc+" alt="Skincare products" class="float-animation">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card bounce">
+                <i class="fas fa-sun"></i>
+                <h3>Morning Ritual</h3>
+                <p>Awaken your skin with our refreshing AM routine</p>
+            </div>
+            <div class="feature-card bounce">
+                <i class="fas fa-moon"></i>
+                <h3>Nighttime Care</h3>
+                <p>Repair and restore while you sleep</p>
+            </div>
+            <div class="feature-card bounce">
+                <i class="fas fa-heart"></i>
+                <h3>Bloom Community</h3>
+                <p>Real stories from our radiant members</p>
+            </div>
+        </section>
+
+        <section id="routines" class="routines-section">
+            <h2 class="section-title">Your Perfect <span>Routine</span></h2>
+            
+            <div class="routine-tabs">
+                <button class="tab-button active" data-tab="morning">Morning ☀️</button>
+                <button class="tab-button" data-tab="night">Night 🌙</button>
+            </div>
+            
+            <div class="routine-content active" id="morning">
+                <div class="routine-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Gentle Cleanser</h3>
+                        <p>Start with a pH-balanced cleanser to remove impurities without stripping your skin.</p>
+                        <div class="product-recommendation">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0iI2ZmZjZmMCIvPjxyZWN0IHg9IjMwIiB5PSIzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0iI2ZmZDZlMCIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNTAiIGZpbGw9IiNmZmI3YzUiLz48cGF0aCBkPSJNNzAgMTAwIGEzMCAzMCAwIDEgMCA2MCAwIGEzMCAzMCAwIDEgMCAtNjAgMCIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" alt="Rosewater Cleanser">
+                            <p>Our favorite: <span>Luminous Rose Cleanser</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="routine-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Vitamin C Serum</h3>
+                        <p>Apply an antioxidant serum to protect against environmental damage.</p>
+                        <div class="product-recommendation">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0iI2ZmZjZmMCIvPjxyZWN0IHg9IjMwIiB5PSIzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0iI2UyZDFmOSIvPjxwYXRoIGQ9Ik01MCAxMDAgbDEwMCAtMzAgbCAtMzAgMTAwIGwgMTAwIC0zMCIgc3Ryb2tlPSIjZmZiN2M1IiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9Im5vbmUiLz48L3N2Zz4=" alt="Vitamin C Serum">
+                            <p>Our favorite: <span>Golden Glow Serum</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="routine-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Moisturize</h3>
+                        <p>Hydrate with a lightweight, non-comedogenic moisturizer.</p>
+                    </div>
+                </div>
+                
+                <div class="routine-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Sunscreen</h3>
+                        <p>Finish with broad-spectrum SPF 30+ to protect your glow.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="routine-content" id="night">
+                <div class="routine-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Double Cleanse</h3>
+                        <p>Start with an oil-based cleanser followed by a water-based one.</p>
+                    </div>
+                </div>
+                
+                <div class="routine-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Treatment</h3>
+                        <p>Apply your targeted treatments (retinol, acids, etc.).</p>
+                    </div>
+                </div>
+                
+                <div class="routine-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Moisturize</h3>
+                        <p>Lock in moisture with a richer nighttime formula.</p>
+                    </div>
+                </div>
+                
+                <div class="routine-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Facial Oil</h3>
+                        <p>Optional: Seal with a nourishing facial oil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2 class="section-title">Product <span>Essentials</span></h2>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cleanser">Cleansers</button>
+                <button class="filter-btn" data-filter="serum">Serums</button>
+                <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+                <button class="filter-btn" data-filter="sunscreen">Sunscreen</button>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-category="cleanser">
+                    <div class="product-img-container">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0iI2ZmZjZmMCIvPjxyZWN0IHg9IjMwIiB5PSIzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0iI2ZmZDZlMCIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNTAiIGZpbGw9IiNmZmI3YzUiLz48cGF0aCBkPSJNNzAgMTAwIGEzMCAzMCAwIDEgMCA2MCAwIGEzMCAzMCAwIDEgMCAtNjAgMCIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" alt="Rosewater Cleanser">
+                        <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <h3>Luminous Rose Cleanser</h3>
+                    <p class="product-desc">pH-balanced with rosewater and hyaluronic acid</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-routine">+ Add to Routine</button>
+                </div>
+                
+                <div class="product-card" data-category="serum">
+                    <div class="product-img-container">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0iI2ZmZjZmMCIvPjxyZWN0IHg9IjMwIiB5PSIzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0iI2UyZDFmOSIvPjxwYXRoIGQ9Ik01MCAxMDAgbDEwMCAtMzAgbCAtMzAgMTAwIGwgMTAwIC0zMCIgc3Ryb2tlPSIjZmZiN2M1IiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9Im5vbmUiLz48L3N2Zz4=" alt="Vitamin C Serum">
+                        <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <h3>Golden Glow Serum</h3>
+                    <p class="product-desc">15% Vitamin C with ferulic acid and vitamin E</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-routine">+ Add to Routine</button>
+                </div>
+                
+                <div class="product-card" data-category="moisturizer">
+                    <div class="product-img-container">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0iI2ZmZjZmMCIvPjxyZWN0IHg9IjMwIiB5PSIzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0iI2ZmZDZlMCIvPjxwYXRoIGQ9Ik00MCAxMDAgbDEyMCAwIG0tNjAgLTYwIGwwIDEyMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9Im5vbmUiLz48L3N2Zz4=" alt="Hydra Cream">
+                        <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <h3>Dew Drop Gel Cream</h3>
+                    <p class="product-desc">Lightweight hydration with hyaluronic acid</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-routine">+ Add to Routine</button>
+                </div>
+                
+                <div class="product-card" data-category="sunscreen">
+                    <div class="product-img-container">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0iI2ZmZjZmMCIvPjxyZWN0IHg9IjMwIiB5PSIzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxNSIgZmlsbD0iI2ZmZDZlMCIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9IiNmZmZmZmYiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjIwIiBmaWxsPSIjZmZiN2M1Ii8+PHBhdGggZD0iTTEwMCA2MCBsMCA4MCBtLTQwIDAgbDgwIDAiIHN0cm9rZT0iI2ZmYjdjNSIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIi8+PC9zdmc+" alt="Sun Shield">
+                        <button class="heart-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <h3>Sun Kiss SPF 50</h3>
+                    <p class="product-desc">Weightless mineral sunscreen</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-routine">+ Add to Routine</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="testimonials">
+            <h2 class="section-title">Bloom <span>Stories</span></h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="user-info">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNjAiIGZpbGw9IiNmZmQ2ZTAiLz48Y2lyY2xlIGN4PSI0NSIgY3k9IjQ1IiByPSIxMCIgZmlsbD0iI2ZmZmZmZiIvPjxjaXJjbGUgY3g9Ijc1IiBjeT0iNDUiIHI9IjEwIiBmaWxsPSIjZmZmZmZmIi8+PHBhdGggZD0iTTQ1IDkwIHExNSAtMTAgMzAgMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==" alt="User 1">
+                        <h4>Sophia R.</h4>
+                        <p>Combination Skin</p>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The morning routine transformed my skin in just 2 weeks! My redness has reduced significantly and my skin feels so balanced."</p>
+                        <div class="user-routine">
+                            <h5>Sophia's Routine:</h5>
+                            <p>Luminous Rose Cleanser → Golden Glow Serum → Dew Drop Gel Cream → Sun Kiss SPF 50</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTIwIDEyMCI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNjAiIGZpbGw9IiNlMmQxZjkiLz48Y2lyY2xlIGN4PSI0NSIgY3k9IjQ1IiByPSIxMCIgZmlsbD0iI2ZmZmZmZiIvPjxjaXJjbGUgY3g9Ijc1IiBjeT0iNDUiIHI9IjEwIiBmaWxsPSIjZmZmZmZmIi8+PHBhdGggZD0iTTQ1IDkwIHExNSAtMTAgMzAgMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==" alt="User 2">
+                        <h4>Emma L.</h4>
+                        <p>Dry Skin</p>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"As someone with dry, sensitive skin, I was skeptical. But the gentle products recommended here saved my skin barrier!"</p>
+                        <div class="user-routine">
+                            <h5>Emma's Routine:</h5>
+                            <p>Gentle Milk Cleanser → Hyaluronic Acid → Ceramide Cream → Facial Oil</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our <span>Bloom Circle</span></h2>
+                <p>Get exclusive skincare rituals, product launches, and special offers straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="submit-btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="newsletter-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMzAwIDMwMCI+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSIxMjAiIGZpbGw9IiNmZmQ2ZTAiLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjkwIiBmaWxsPSIjZmZmNmYwIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI2MCIgZmlsbD0iI2ZmYjdjNSIvPjxwYXRoIGQ9Ik0xMjAgMTUwIGE2MCA2MCAwIDAgMSA2MCAtNjAgbCAwIDEyMCBhNjAgNjAgMCAwIDEgLTYwIC02MCIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" alt="Newsletter" class="rotate-animation">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Bloom & Glow</h3>
+                <p>Nurturing your natural radiance.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#routines">Routines</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>bloom&glow@gmail.com</p>
+                <p>+91 9998887523</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Bloom & Glow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
